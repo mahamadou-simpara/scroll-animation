@@ -1,0 +1,29 @@
+*{
+ box-sizing: border-box;
+ 
+}
+body{
+  text-align: center;
+ }
+
+ .scroll{
+ background-color: brown;
+ margin: 15px auto;
+ width: 15rem;
+ height: 20vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ transition: 0.5s;
+ transform: translateX(400%);
+ box-shadow: -1px 4px 10px 20px;
+ }
+
+ .scroll:nth-child(even){
+ transform: translateX(-600px);
+ }
+
+ .scroll.show{
+    transform: translateX(0);
+ }
